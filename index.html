@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bali</title>
-    <link href="TA .css" rel="stylesheet">
+    <meta name="theme-color" content="#173c35">
+    <meta name="description" content="Temukan hotel, rental mobil, dan destinasi pilihan untuk perjalanan Anda di Bali.">
+    <title>Jelajahi Bali | Panduan Perjalanan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="TA .css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">BALI</a>
+            <a class="navbar-brand" href="#top" aria-label="Beranda Bali">BALI<span>.</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -31,9 +35,12 @@
     <!-- ##### -->
 
     <!-- JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" id="top">
     <div class="container">
-        <h1 class="display-4">NIKMATI HARI LIBUR<br> ANDA DI BALI</h1>
+        <p class="hero-eyebrow">PULAU DEWATA MENANTI ANDA</p>
+        <h1 class="display-4">Nikmati hari libur<br>Anda di Bali</h1>
+        <p class="hero-copy">Temukan tempat menginap, perjalanan nyaman, dan destinasi yang tak terlupakan.</p>
+        <a class="hero-cta" href="#wisata">Jelajahi Bali <span aria-hidden="true">&rarr;</span></a>
     </div>
     </div>   
     <!-- ######### -->
@@ -66,6 +73,11 @@
                 <!-- Pemjelasan -->
                 <div class="row justify-content-center penjelasan" id="hotel">
                     <div class="col-lg-12">
+                        <div class="section-heading">
+                            <p class="section-kicker">MENGINAP DENGAN NYAMAN</p>
+                            <h2>Hotel pilihan di Bali</h2>
+                            <p>Temukan penginapan istimewa untuk setiap suasana perjalanan.</p>
+                        </div>
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -162,6 +174,11 @@
 
                 <div class="row justify-content-center" id="car-rental">
                     <div class="col-10 mobil">
+                        <div class="section-heading">
+                            <p class="section-kicker">BEBAS MENJELAJAH</p>
+                            <h2>Rental mobil terpercaya</h2>
+                            <p>Pilihan kendaraan untuk perjalanan yang lebih leluasa.</p>
+                        </div>
                         <div class="row">
                             <div class="col-md">
                                 <img src="img/xenia.png" alt="xenia" class="float-left">
@@ -226,13 +243,18 @@
                 <!-- Panel Wisata -->
 
                 <div class="row  wisata-bali" id="wisata">
+                    <div class="col-12 section-heading">
+                        <p class="section-kicker">SUDUT TERBAIK PULAU DEWATA</p>
+                        <h2>Destinasi pilihan</h2>
+                        <p>Dari suasana danau yang tenang hingga pesisir yang memikat.</p>
+                    </div>
                     <div class="col-lg-6">
                         <img src="img/1bali.jpg" alt="Pura Ulun Danu Beratan" class="img-fluid" class="float-left rounded">    
                     </div>
                     <div class="col-lg-5 deskrip">
                         <h3> PURA ULUN DANU BERATAN</h3>
                         <p>Terletak di tepi Danau Beratan di Bali, pura ini adalah salah satu pura paling ikonik di Pulau Dewata. Arsitektur yang megah dengan latar belakang Danau Beratan yang indah menawarkan pengalaman spiritual dan keindahan alam yang memukau. Ketenangan danau serta keindahan bangunan pura membuatnya menjadi salah satu destinasi wisata spiritual dan fotografi yang populer.</p>  
-                        <a href="https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/bali/ulun-danu-beratan" class="btn btn-dark rounded-pill">Lebih</a>
+                        <a href="https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/bali/ulun-danu-beratan" class="btn btn-dark rounded-pill" target="_blank" rel="noopener noreferrer">Jelajahi destinasi</a>
                     </div>
                     <div class="col-lg-6">
                         <img src="img/pantai kuta.jpg" alt="pantai Kuta" class="img-fluid rounded">
@@ -240,7 +262,7 @@
                     <div class="col-lg-5 deskrip">
                         <h3> PANTAI KUTA </h3>
                         <p>Salah satu pantai paling terkenal di Bali. Pantai ini menawarkan pesona keindahan alam dengan pasir putih yang luas, ombak yang cocok untuk berselancar, dan suasana pantai yang hidup. Di sepanjang pantai Kuta, terdapat berbagai restoran, toko, dan tempat hiburan yang membuatnya menjadi pusat kegiatan wisata di Bali.</p>
-                        <a href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/kuta" class="btn btn-dark rounded-pill">Lebih</a>
+                        <a href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/kuta" class="btn btn-dark rounded-pill" target="_blank" rel="noopener noreferrer">Jelajahi destinasi</a>
                     </div>
                     <div class="col-lg-6">
                         <img src="img/nusa penida.jpg" alt="Nusa Penida" class="img-fluid">
@@ -248,10 +270,33 @@
                     <div class="col-lg-5 deskrip">
                         <h3> NUSA PENIDA </h3>
                         <p>Terletak di sebelah tenggara Bali, Nusa Penida menawarkan keindahan alam yang masih alami. Dikenal dengan pemandangan tebing-tebing yang dramatis, pantai-pantai cantik seperti Kelingking Beach, Angel's Billabong, dan Broken Beach yang menakjubkan. Pulau ini memberikan pengalaman yang berbeda dari keramaian Bali, dengan suasana yang lebih tenang dan pemandangan alam yang menakjubkan.</p>
-                        <a href="https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/nusa-penida-a-tiny-paradise-in-the-southeast-of-bali" class="btn btn-dark rounded-pill">Lebih</a>
+                        <a href="https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/nusa-penida-a-tiny-paradise-in-the-southeast-of-bali" class="btn btn-dark rounded-pill" target="_blank" rel="noopener noreferrer">Jelajahi destinasi</a>
                     </div>
                 </div>
             <!-- --- -->
         </div>
+    <script>
+        document.body.classList.add('motion-ready');
+        const revealItems = document.querySelectorAll('.panel, .penjelasan, .detail > [class*="col-"], .mobil, .wisata-bali > [class*="col-lg-"]');
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealItems.forEach((item, index) => {
+                item.classList.add('reveal-item');
+                item.style.setProperty('--reveal-delay', `${(index % 3) * 90}ms`);
+                revealObserver.observe(item);
+            });
+        } else {
+            revealItems.forEach((item) => item.classList.add('is-visible'));
+        }
+    </script>
 </body>
 </html>
